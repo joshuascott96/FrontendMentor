@@ -2,14 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 .bg-blue {
     background-color: hsl(218, 23%, 16%);
 }
 
 .card-blue {
-    background-color: hsla(216, 19%, 38%, 0.883);
+    background-color: hsla(216, 19%, 38%, 0.593);
 }
 
 .neon {
     color: hsl(150, 100%, 66%);
+}
+
+.neon-bg {
+    background-color: hsl(150, 100%, 66%);
+}
+
+.neon-bg:hover {
+    background-color: hsl(150, 75%, 49%);
+    @apply duration-300;
+}
+
+.quote {
+    font-family: 'Manrope', sans-serif;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 28px;
 }
