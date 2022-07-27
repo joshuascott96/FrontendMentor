@@ -1,12 +1,16 @@
 import Card from './components/Card';
+import Title from './components/Title';
+import { BillProvider } from './context/BillContext';
 
 function App() {
   return (
-    <>
-      <div className='content w-full h-screen flex justify-center items-center'>
+
+    <BillProvider>
+      <div className='content w-full sm:h-screen flex flex-col justify-center items-center'>
+        <Title />
         <Card />
       </div>
-    </>
+    </BillProvider>
   );
 }
 
