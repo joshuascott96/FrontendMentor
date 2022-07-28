@@ -3,19 +3,19 @@ import { createContext, useState, useEffect } from 'react';
 const BillContext = createContext();
 
 export const BillProvider = ({ children }) => {
-    const [total, setTotal] = useState('')
-    const [bill, setBill] = useState('')
-    const [people, setPeople] = useState('')
+    const [total, setTotal] = useState(0)
+    const [bill, setBill] = useState(0)
+    const [people, setPeople] = useState(1)
     const [custom, setCustom] = useState('')
-    const [tip, setTip] = useState('')
-    const [tipTotal, setTipTotal] = useState('')
+    const [tip, setTip] = useState(0)
+    const [tipTotal, setTipTotal] = useState(0)
 
     const handleReset = () => {
-        setBill('')
-        setPeople('')
+        setBill(0)
+        setPeople(1)
         setCustom('')
-        setTotal('0.00')
-        setTipTotal('0.00')
+        setTotal(0)
+        setTipTotal(0)
     }
 
     useEffect(() => {
@@ -30,6 +30,7 @@ export const BillProvider = ({ children }) => {
             setTipTotal((total * custom) / 100)
         }
     }
+
 
     return <BillContext.Provider value={{
         bill,

@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .content {
     background-color: hsl(185, 41%, 84%);
     font-family: 'Space Mono', monospace;

@@ -12,7 +12,7 @@ function Calculated() {
                     <p className='text-xs opacity-50 pt-1'>/ person</p>
                 </div>
                 <div>
-                    <h2 className='text-4xl'>${tipTotal}</h2>
+                    <h2 className='text-4xl'>${tipTotal.toLocaleString()}</h2>
                 </div>
             </div>
             <div className='flex justify-between mt-12'>
@@ -21,7 +21,7 @@ function Calculated() {
                     <p className='text-xs opacity-50 pt-1'>/ person</p>
                 </div>
                 <div>
-                    <h2 className='text-4xl'>${total}</h2>
+                    <h2 className='text-4xl'>${total.toLocaleString()}</h2>
                 </div>
             </div>
             <div className='mt-20 w-full text-center'>
